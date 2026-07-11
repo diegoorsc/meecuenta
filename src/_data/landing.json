@@ -1,0 +1,23 @@
+{
+  "hero": {
+    "pildora": "Tecnología que conecta cultura, historia y comunidad",
+    "presentacion": "¡Hola, soy Chivita! Soy el robot guía del proyecto M-E-E (Máquina para Escuchar y Enseñar). Recorro el espacio de forma autónoma y te muestro el patrimonio de Illapel: solo tienes que hablarme."
+  },
+  "que_es": {
+    "titulo": "¿Qué es Chivita?",
+    "parrafos": [
+      "Chivita es el robot guía del proyecto M-E-E (Máquina para Escuchar y Enseñar), creado por estudiantes del Colegio Santa Teresa de Jesús de Illapel para la World Robot Olympiad 2026, categoría Senior.",
+      "Su misión es acercar el patrimonio de Illapel a quien se le acerque: proyecta un mapa interactivo de la ciudad y narra la historia, las fotos y los datos de cada lugar patrimonial.",
+      "Con este proyecto buscamos demostrar que la robótica y la inteligencia artificial pueden ponerse al servicio de la comunidad, aportando a la meta 4.7 de los Objetivos de Desarrollo Sostenible (ODS 4): educación para el desarrollo sostenible y la valoración de la diversidad cultural."
+    ]
+  },
+  "por_que_importa": {
+    "titulo": "¿Por qué importa?",
+    "items": [
+      { "titulo": "Promueve el turismo", "texto": "Invita a residentes y visitantes a recorrer Illapel con una mirada nueva." },
+      { "titulo": "Difunde el patrimonio", "texto": "Pone en valor lugares, historias y personajes que no siempre están en una guía turística." },
+      { "titulo": "Enseña con tecnología", "texto": "Muestra que la robótica y la IA pueden usarse para contar historias, no solo para resolver problemas técnicos." },
+      { "titulo": "Fortalece la identidad", "texto": "Ayuda a que niños, niñas y jóvenes de Illapel se sientan orgullosos de su historia local." }
+    ]
+  }
+}

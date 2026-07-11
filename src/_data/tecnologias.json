@@ -1,0 +1,12 @@
+{
+  "items": [
+    { "nombre": "Raspberry Pi 4", "rol": "Cerebro central de Chivita" },
+    { "nombre": "Micrófono ReSpeaker (DOA)", "rol": "Detecta la dirección desde donde le hablan" },
+    { "nombre": "Reconocimiento de voz offline en español (Vosk)", "rol": "Entiende al visitante sin necesitar internet" },
+    { "nombre": "Proyector", "rol": "Proyecta el mapa interactivo de Illapel" },
+    { "nombre": "Doble pantalla", "rol": "Muestra fotos y datos del lugar elegido" },
+    { "nombre": "ESP32 + PCA9685", "rol": "Controla el movimiento de los servomotores" },
+    { "nombre": "8 servomotores (patas)", "rol": "Dan movimiento a las patas de Chivita" },
+    { "nombre": "4 ruedas con motorreductor", "rol": "Permiten el desplazamiento autónomo" }
+  ]
+}

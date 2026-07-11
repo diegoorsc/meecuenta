@@ -1,0 +1,29 @@
+{
+  "items": [
+    {
+      "numero": 1,
+      "titulo": "Se desplaza sola",
+      "texto": "Chivita se desplaza de forma autónoma con sus patas con servos y sus ruedas con motorreductor."
+    },
+    {
+      "numero": 2,
+      "titulo": "Escucha de dónde le hablan",
+      "texto": "Su micrófono direccional ReSpeaker detecta desde qué dirección le habla el visitante."
+    },
+    {
+      "numero": 3,
+      "titulo": "Se da vuelta hacia ti",
+      "texto": "Chivita gira su cuerpo completo para quedar de frente, con la pantalla perpendicular a tu mirada."
+    },
+    {
+      "numero": 4,
+      "titulo": "Proyecta el mapa",
+      "texto": "Proyecta un mapa interactivo de Illapel y muestra el lugar elegido."
+    },
+    {
+      "numero": 5,
+      "titulo": "Cuenta la historia",
+      "texto": "Narra la historia del lugar, con fotos y datos."
+    }
+  ]
+}

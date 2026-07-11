@@ -1,0 +1,233 @@
+backend:
+  name: git-gateway
+  # Si la rama principal de tu repo en GitHub se llama distinto (por
+  # ejemplo "master"), cambiá este valor para que coincida.
+  branch: main
+
+# Carpeta de imágenes por defecto (fallback) si algún campo de imagen no
+# define su propia carpeta. Con el backend git-gateway, todo lo que se
+# sube acá queda commiteado en el repo de GitHub y Eleventy lo copia tal
+# cual a /img en el sitio publicado (ver .eleventy.js).
+media_folder: "src/img/uploads"
+public_folder: "/img/uploads"
+
+collections:
+  # ============================================================
+  # 1. LUGARES PATRIMONIALES
+  # ============================================================
+  - name: "lugares"
+    label: "Lugares patrimoniales"
+    label_singular: "Lugar"
+    folder: "src/lugares"
+    create: true
+    delete: true
+    slug: "{{slug}}"
+    identifier_field: "nombre"
+    format: "frontmatter"
+    sortable_fields: ["orden", "nombre"]
+    fields:
+      - label: "Nombre"
+        name: "nombre"
+        widget: "string"
+      - label: "Descripción"
+        name: "descripcion"
+        widget: "text"
+      - label: "Foto"
+        name: "foto"
+        widget: "image"
+        required: false
+        media_folder: "/src/img/lugares"
+        public_folder: "/img/lugares"
+        hint: "Se guarda automáticamente en /img/lugares y queda versionada en el repo. Si se deja vacío, la web muestra un cartel con el nombre del lugar."
+      - label: "Orden"
+        name: "orden"
+        widget: "number"
+        value_type: "int"
+        default: 0
+        hint: "Define el orden en que aparece en la galería (1 = primero)."
+      - label: "Destacado"
+        name: "destacado"
+        widget: "boolean"
+        default: false
+
+  # ============================================================
+  # 2. NOTICIAS
+  # ============================================================
+  - name: "noticias"
+    label: "Noticias"
+    label_singular: "Noticia"
+    folder: "src/noticias"
+    create: true
+    delete: true
+    slug: "{{slug}}"
+    identifier_field: "titulo"
+    format: "frontmatter"
+    sortable_fields: ["fecha", "titulo"]
+    fields:
+      - label: "Título"
+        name: "titulo"
+        widget: "string"
+      - label: "Fecha"
+        name: "fecha"
+        widget: "datetime"
+        format: "YYYY-MM-DD"
+        time_format: false
+        picker_utc: true
+      - label: "Imagen de portada"
+        name: "portada"
+        widget: "image"
+        required: false
+        media_folder: "/src/img/noticias"
+        public_folder: "/img/noticias"
+        hint: "Opcional. Se guarda en /img/noticias. Si se deja vacío, la web muestra un cartel con el título."
+      - label: "Resumen corto"
+        name: "resumen"
+        widget: "text"
+      - label: "Cuerpo"
+        name: "body"
+        widget: "markdown"
+
+  # ============================================================
+  # 3. CONTENIDO DE PÁGINAS (landing + start-up + datos generales)
+  # Son archivos únicos (no listas), por eso van como "files" y no
+  # como "folder": cada uno edita un archivo JSON puntual en src/_data.
+  # ============================================================
+  - name: "paginas"
+    label: "Contenido de páginas"
+    files:
+      # --- Datos generales del sitio ---
+      - name: "sitio"
+        label: "Datos generales del sitio"
+        file: "src/_data/site.json"
+        fields:
+          - label: "URL del sitio publicado"
+            name: "url"
+            widget: "string"
+            hint: "Sin barra al final. Se usa para armar los links de Open Graph al compartir en redes. Actualizar con la URL real de Netlify o el dominio final."
+          - { label: "Nombre del proyecto", name: "nombre_proyecto", widget: "string" }
+          - { label: "Nombre del robot", name: "nombre_robot", widget: "string" }
+          - { label: "Nombre de la experiencia (marca)", name: "nombre_experiencia", widget: "string" }
+          - { label: "Slogan", name: "slogan", widget: "string" }
+          - { label: "Colegio", name: "colegio", widget: "string" }
+          - { label: "Competencia", name: "competencia", widget: "string" }
+          - { label: "ODS / meta", name: "ods", widget: "string" }
+
+      # --- Página de inicio (landing) ---
+      - name: "landing"
+        label: "Página de inicio (Landing)"
+        file: "src/_data/landing.json"
+        fields:
+          - label: "Hero"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Píldora superior", name: "pildora", widget: "string" }
+              - label: "Presentación de Chivita (en primera persona)"
+                name: "presentacion"
+                widget: "text"
+          - label: "¿Qué es Chivita?"
+            name: "que_es"
+            widget: "object"
+            fields:
+              - { label: "Título", name: "titulo", widget: "string" }
+              - label: "Párrafos"
+                name: "parrafos"
+                widget: "list"
+                hint: "Un párrafo por línea."
+          - label: "¿Por qué importa?"
+            name: "por_que_importa"
+            widget: "object"
+            fields:
+              - { label: "Título", name: "titulo", widget: "string" }
+              - label: "Puntos"
+                name: "items"
+                widget: "list"
+                fields:
+                  - { label: "Título", name: "titulo", widget: "string" }
+                  - { label: "Texto", name: "texto", widget: "text" }
+
+      # --- Cómo funciona Chivita (5 pasos) ---
+      - name: "pasos"
+        label: "Cómo funciona (5 pasos de Chivita)"
+        file: "src/_data/pasos.json"
+        fields:
+          - label: "Pasos"
+            name: "items"
+            widget: "list"
+            hint: "⚠️ Es contenido técnico revisado: evitar términos como 'sensor de movimiento/PIR', 'ruedas omnidireccionales' o 'gira la cabeza'. Chivita usa micrófono direccional ReSpeaker, ruedas con motorreductor y gira el cuerpo completo."
+            fields:
+              - { label: "Número", name: "numero", widget: "number", value_type: "int" }
+              - { label: "Título", name: "titulo", widget: "string" }
+              - { label: "Texto", name: "texto", widget: "text" }
+
+      # --- Tabla de tecnología ---
+      - name: "tecnologias"
+        label: "Tabla de tecnología"
+        file: "src/_data/tecnologias.json"
+        fields:
+          - label: "Componentes"
+            name: "items"
+            widget: "list"
+            hint: "⚠️ Esta tabla se usa igual en toda la web. Editar solo si cambia el hardware real de Chivita."
+            fields:
+              - { label: "Nombre del componente", name: "nombre", widget: "string" }
+              - { label: "Rol / para qué sirve", name: "rol", widget: "string" }
+
+      # --- M-E-E como start-up (lado visionario) ---
+      - name: "startup"
+        label: "M-E-E como start-up"
+        file: "src/_data/startup.json"
+        fields:
+          - label: "Etiqueta / texto del banner de visión"
+            name: "banner"
+            widget: "text"
+            hint: "Se muestra en el cartel 'Visión de futuro' arriba de la página."
+          - label: "Texto puente (hoy es escolar → hacia dónde podría crecer)"
+            name: "intro"
+            widget: "text"
+          - label: "Propuesta de valor"
+            name: "propuesta_valor"
+            widget: "object"
+            fields:
+              - { label: "Título", name: "titulo", widget: "string" }
+              - { label: "Slogan", name: "slogan", widget: "string" }
+              - { label: "Texto", name: "texto", widget: "text" }
+          - label: "Clientes objetivo"
+            name: "clientes"
+            widget: "list"
+            fields:
+              - { label: "Título", name: "titulo", widget: "string" }
+              - { label: "Texto", name: "texto", widget: "text" }
+          - label: "Cómo se replica"
+            name: "como_se_replica"
+            widget: "object"
+            fields:
+              - { label: "Título", name: "titulo", widget: "string" }
+              - { label: "Texto", name: "texto", widget: "text" }
+          - label: "Planes (modelo de ingresos)"
+            name: "planes"
+            widget: "list"
+            fields:
+              - { label: "Nombre del plan", name: "nombre", widget: "string" }
+              - { label: "A quién apunta", name: "para_quien", widget: "string" }
+              - label: "Qué incluye"
+                name: "incluye"
+                widget: "list"
+                hint: "Un ítem por línea."
+              - label: "Precio"
+                name: "precio"
+                widget: "string"
+                hint: "Dejar <PRECIO> si todavía no está definido."
+          - label: "Impacto"
+            name: "impacto"
+            widget: "list"
+            fields:
+              - { label: "Título", name: "titulo", widget: "string" }
+              - { label: "Texto", name: "texto", widget: "text" }
+          - label: "Llamado a la acción"
+            name: "cta"
+            widget: "object"
+            fields:
+              - { label: "Título", name: "titulo", widget: "string" }
+              - { label: "Texto", name: "texto", widget: "text" }
+              - { label: "Texto del botón", name: "boton_texto", widget: "string" }

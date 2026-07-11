@@ -1,0 +1,94 @@
+---
+layout: layouts/base.njk
+title: Illapel a tus Patas · M-E-E
+description: Chivita, el robot guía del proyecto M-E-E, te muestra el patrimonio de Illapel.
+---
+
+<!-- ===== 1. HERO ===== -->
+<section class="hero container">
+  <span class="hero__pill">{{ landing.hero.pildora }}</span>
+
+  <svg class="hero__goat" viewBox="0 0 240 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="goatTitle">
+    <title id="goatTitle">Ilustración de Chivita, la cabra robot</title>
+    <ellipse cx="55" cy="112" rx="26" ry="40" fill="#8E8AA6" transform="rotate(-25 55 112)"/>
+    <ellipse cx="185" cy="112" rx="26" ry="40" fill="#8E8AA6" transform="rotate(25 185 112)"/>
+    <path d="M95 60 C 85 25, 70 15, 55 20 C 75 25, 82 45, 92 70 Z" fill="#5C6B3C"/>
+    <path d="M145 60 C 155 25, 170 15, 185 20 C 165 25, 158 45, 148 70 Z" fill="#5C6B3C"/>
+    <line x1="120" y1="70" x2="120" y2="45" stroke="#1E2A5A" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="120" cy="38" r="9" fill="#5C6B3C" stroke="#1E2A5A" stroke-width="4"/>
+    <ellipse cx="120" cy="140" rx="78" ry="70" fill="#F1EFE7" stroke="#1E2A5A" stroke-width="6"/>
+    <ellipse cx="120" cy="177" rx="42" ry="30" fill="#DCE2CC" stroke="#1E2A5A" stroke-width="5"/>
+    <circle cx="95" cy="130" r="8" fill="#1E2A5A"/>
+    <circle cx="145" cy="130" r="8" fill="#1E2A5A"/>
+    <circle cx="80" cy="155" r="9" fill="#8E8AA6" opacity="0.5"/>
+    <circle cx="160" cy="155" r="9" fill="#8E8AA6" opacity="0.5"/>
+    <circle cx="110" cy="174" r="4" fill="#1E2A5A"/>
+    <circle cx="130" cy="174" r="4" fill="#1E2A5A"/>
+    <path d="M108 190 Q120 198 132 190" stroke="#1E2A5A" stroke-width="4" fill="none" stroke-linecap="round"/>
+  </svg>
+
+  <h1 class="hero__title">{{ site.nombre_experiencia }}</h1>
+  <p class="hero__slogan">{{ site.slogan }}</p>
+
+  <div class="hero__speech">
+    <p>{{ landing.hero.presentacion }}</p>
+  </div>
+</section>
+
+<!-- ===== 2. ¿QUÉ ES CHIVITA? ===== -->
+<section class="section que-es container">
+  <p class="section__eyebrow">El proyecto</p>
+  <h2 class="section__title">{{ landing.que_es.titulo }}</h2>
+  {% for parrafo in landing.que_es.parrafos %}
+    <p>{{ parrafo }}</p>
+  {% endfor %}
+</section>
+
+<!-- ===== 3. ¿CÓMO FUNCIONA? ===== -->
+<section class="section section--salvia">
+  <div class="container">
+    <p class="section__eyebrow">Paso a paso</p>
+    <h2 class="section__title">¿Cómo funciona?</h2>
+    <ul class="steps">
+      {% for paso in pasos.items %}
+        <li class="step">
+          <span class="step__num">{{ paso.numero }}</span>
+          <div>
+            <h3 class="step__titulo">{{ paso.titulo }}</h3>
+            <p class="step__texto">{{ paso.texto }}</p>
+          </div>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
+<!-- ===== 4. TECNOLOGÍA ===== -->
+<section class="section container">
+  <p class="section__eyebrow">Bajo el capó</p>
+  <h2 class="section__title">Tecnología</h2>
+  <ul class="tech-grid">
+    {% for tech in tecnologias.items %}
+      <li class="tech-card">
+        <span class="tech-card__nombre">{{ tech.nombre }}</span>
+        <span class="tech-card__rol">{{ tech.rol }}</span>
+      </li>
+    {% endfor %}
+  </ul>
+</section>
+
+<!-- ===== 5. ¿POR QUÉ IMPORTA? ===== -->
+<section class="section section--marino">
+  <div class="container">
+    <p class="section__eyebrow">El impacto</p>
+    <h2 class="section__title">{{ landing.por_que_importa.titulo }}</h2>
+    <ul class="why-grid">
+      {% for item in landing.por_que_importa.items %}
+        <li class="why-card">
+          <h3 class="why-card__titulo">{{ item.titulo }}</h3>
+          <p class="why-card__texto">{{ item.texto }}</p>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>

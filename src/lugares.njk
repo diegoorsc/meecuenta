@@ -1,0 +1,51 @@
+---
+layout: layouts/base.njk
+title: Descubre Illapel · Illapel a tus Patas
+description: Los lugares patrimoniales de Illapel que Chivita te muestra en su recorrido.
+---
+
+<section class="section container">
+  <p class="section__eyebrow">El recorrido</p>
+  <h1 class="section__title">Descubre Illapel</h1>
+  <p>Estos son los lugares patrimoniales que Chivita conoce y te puede mostrar en su recorrido por la ciudad.</p>
+
+  <div class="sabias-que">
+    <svg class="sabias-que__icono" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <circle cx="24" cy="24" r="21" fill="none" stroke="#F1EFE7" stroke-width="2.5"/>
+      <circle cx="16" cy="18" r="2" fill="#F1EFE7"/>
+      <circle cx="31" cy="15" r="1.5" fill="#F1EFE7"/>
+      <circle cx="34" cy="27" r="2" fill="#F1EFE7"/>
+      <circle cx="18" cy="33" r="1.5" fill="#F1EFE7"/>
+      <circle cx="27" cy="34" r="1.2" fill="#F1EFE7"/>
+    </svg>
+    <div>
+      <p class="sabias-que__titulo">¿Sabías que?</p>
+      <p class="sabias-que__texto">Illapel tiene uno de los cielos más limpios del Norte Chico para la observación astronómica: sus noches despejadas y su baja contaminación lumínica lo hacen un lugar privilegiado para mirar las estrellas.</p>
+    </div>
+  </div>
+
+  <ul class="lugares-grid">
+    {% for lugar in collections.lugares %}
+      <li class="lugar-card">
+        <div class="lugar-card__media">
+          {% if lugar.data.foto %}
+            <img src="{{ lugar.data.foto }}" alt="{{ lugar.data.nombre }}" loading="lazy">
+          {% else %}
+            <div class="lugar-card__placeholder">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M12 2 L2 21 H22 Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+                <circle cx="12" cy="12" r="2" fill="currentColor"/>
+              </svg>
+              <span>{{ lugar.data.nombre }}</span>
+            </div>
+          {% endif %}
+        </div>
+        <div class="lugar-card__body">
+          {% if lugar.data.destacado %}<span class="lugar-card__badge">Destacado</span>{% endif %}
+          <h3 class="lugar-card__nombre">{{ lugar.data.nombre }}</h3>
+          <p class="lugar-card__descripcion">{{ lugar.data.descripcion }}</p>
+        </div>
+      </li>
+    {% endfor %}
+  </ul>
+</section>

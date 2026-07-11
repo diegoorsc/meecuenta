@@ -1,0 +1,61 @@
+{
+  "banner": "Así imaginamos a M-E-E si se convirtiera en una empresa real. Hoy es un proyecto escolar de robótica; esto es una proyección, no un producto a la venta.",
+  "intro": "Hoy, M-E-E es un proyecto escolar de robótica hecho por estudiantes del Colegio Santa Teresa de Jesús de Illapel, camino a la World Robot Olympiad 2026. Esta página imagina hacia dónde podría crecer si se convirtiera en un producto real para otras comunas, colegios y oficinas de turismo.",
+  "propuesta_valor": {
+    "titulo": "Un guía patrimonial robótico, replicable en cualquier comuna",
+    "slogan": "Lleva tu patrimonio a la gente.",
+    "texto": "M-E-E podría convertirse en una plataforma robótica que cualquier municipio, colegio u oficina de turismo cargue con la historia, los lugares y las voces de su propio territorio."
+  },
+  "clientes": [
+    { "titulo": "Municipios", "texto": "Para plazas, museos al aire libre y oficinas de turismo municipal." },
+    { "titulo": "Colegios", "texto": "Como proyecto educativo y también como guía patrimonial dentro del establecimiento." },
+    { "titulo": "Oficinas de turismo patrimonial", "texto": "Para complementar recorridos guiados con una experiencia interactiva." }
+  ],
+  "como_se_replica": {
+    "titulo": "¿Cómo se replica?",
+    "texto": "La misma plataforma —robot, mapa interactivo y narración por voz— se recarga con los lugares, las historias y las fotos del nuevo territorio. La tecnología no cambia: cambia el contenido."
+  },
+  "planes": [
+    {
+      "nombre": "Plan Comuna",
+      "para_quien": "Municipios y oficinas de turismo",
+      "incluye": [
+        "Robot guía configurado con el patrimonio local",
+        "Mapa interactivo del territorio",
+        "Actualización de contenidos",
+        "Soporte técnico"
+      ],
+      "precio": "<PRECIO> / mes"
+    },
+    {
+      "nombre": "Plan Colegio",
+      "para_quien": "Establecimientos educacionales",
+      "incluye": [
+        "Robot guía para el patrimonio escolar o comunal",
+        "Material educativo asociado al ODS 4",
+        "Acompañamiento para proyectos estudiantiles"
+      ],
+      "precio": "<PRECIO> / semestre"
+    },
+    {
+      "nombre": "Plan Turismo",
+      "para_quien": "Operadores y oficinas de turismo patrimonial",
+      "incluye": [
+        "Robot guía para puntos turísticos de alto tránsito",
+        "Narración en varios idiomas (proyección)",
+        "Reportes de uso y visitas"
+      ],
+      "precio": "A convenir"
+    }
+  ],
+  "impacto": [
+    { "titulo": "Educación", "texto": "Aporta a la meta 4.7 de los ODS, acercando tecnología y patrimonio a las comunidades." },
+    { "titulo": "Turismo local", "texto": "Suma una experiencia interactiva que invita a recorrer y quedarse más tiempo." },
+    { "titulo": "Identidad territorial", "texto": "Pone en valor la historia y los lugares propios de cada comuna." }
+  ],
+  "cta": {
+    "titulo": "¿Te imaginas esto en tu comuna, colegio o ruta turística?",
+    "texto": "Conversemos sobre cómo podría verse M-E-E en tu territorio.",
+    "boton_texto": "Solicita una demo"
+  }
+}

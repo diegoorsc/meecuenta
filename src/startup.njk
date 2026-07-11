@@ -1,0 +1,126 @@
+---
+layout: layouts/base.njk
+title: M-E-E como start-up · Illapel a tus Patas
+description: Así imaginamos a M-E-E como un producto real — una visión de futuro, no un servicio disponible hoy.
+---
+
+<section class="section container">
+  <div class="vision-banner">
+    <svg class="vision-banner__icono" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M20 4 L24 16 L36 20 L24 24 L20 36 L16 24 L4 20 L16 16 Z" fill="none" stroke="#F1EFE7" stroke-width="2" stroke-linejoin="round"/>
+    </svg>
+    <div>
+      <span class="vision-banner__etiqueta">Visión de futuro</span>
+      <p class="vision-banner__texto">{{ startup.banner }}</p>
+    </div>
+  </div>
+
+  <p class="startup-intro">{{ startup.intro }}</p>
+</section>
+
+<section class="section propuesta-valor container">
+  <p class="section__eyebrow">Propuesta de valor</p>
+  <h1 class="section__title">{{ startup.propuesta_valor.titulo }}</h1>
+  <p class="propuesta-valor__slogan">{{ startup.propuesta_valor.slogan }}</p>
+  <p>{{ startup.propuesta_valor.texto }}</p>
+</section>
+
+<section class="section container">
+  <p class="section__eyebrow">A quién apunta</p>
+  <h2 class="section__title">Clientes objetivo</h2>
+  <ul class="clientes-grid">
+    {% for cliente in startup.clientes %}
+      <li class="cliente-card">
+        <h3>{{ cliente.titulo }}</h3>
+        <p>{{ cliente.texto }}</p>
+      </li>
+    {% endfor %}
+  </ul>
+</section>
+
+<section class="section section--salvia">
+  <div class="container">
+    <p class="section__eyebrow">Escalabilidad</p>
+    <h2 class="section__title">{{ startup.como_se_replica.titulo }}</h2>
+    <p>{{ startup.como_se_replica.texto }}</p>
+    <div class="replica-flow">
+      <span class="replica-flow__item">La plataforma M-E-E</span>
+      <span class="replica-flow__conector">+</span>
+      <span class="replica-flow__item">Patrimonio del territorio</span>
+      <span class="replica-flow__conector">=</span>
+      <span class="replica-flow__item">Tu propia guía patrimonial</span>
+    </div>
+  </div>
+</section>
+
+<section class="section container">
+  <p class="section__eyebrow">Modelo de ingresos</p>
+  <h2 class="section__title">Planes (proyección)</h2>
+  <p>Precios de ejemplo para ilustrar el modelo — <code>&lt;PRECIO&gt;</code> queda como marcador para definir el valor real.</p>
+  <ul class="planes-grid">
+    {% for plan in startup.planes %}
+      <li class="plan-card">
+        <h3 class="plan-card__nombre">{{ plan.nombre }}</h3>
+        <p class="plan-card__para-quien">{{ plan.para_quien }}</p>
+        <ul class="plan-card__incluye">
+          {% for item in plan.incluye %}
+            <li>{{ item }}</li>
+          {% endfor %}
+        </ul>
+        <p class="plan-card__precio">{{ plan.precio }}</p>
+      </li>
+    {% endfor %}
+  </ul>
+</section>
+
+<section class="section section--marino">
+  <div class="container">
+    <p class="section__eyebrow">Impacto</p>
+    <h2 class="section__title">¿Por qué esto importa?</h2>
+    <ul class="why-grid">
+      {% for item in startup.impacto %}
+        <li class="why-card">
+          <h3 class="why-card__titulo">{{ item.titulo }}</h3>
+          <p class="why-card__texto">{{ item.texto }}</p>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
+<section class="section container">
+  <div class="cta-demo">
+    <p class="section__eyebrow">Hablemos</p>
+    <h2 class="cta-demo__titulo">{{ startup.cta.titulo }}</h2>
+    <p>{{ startup.cta.texto }}</p>
+
+    <form class="form" name="demo-startup" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/gracias/">
+      <input type="hidden" name="form-name" value="demo-startup">
+      <p class="visually-hidden">
+        <label>No llenar si eres humano: <input name="bot-field"></label>
+      </p>
+
+      <label class="form__label" for="nombre">
+        Nombre
+        <input class="form__input" type="text" id="nombre" name="nombre" required>
+      </label>
+
+      <label class="form__label" for="institucion">
+        Institución
+        <input class="form__input" type="text" id="institucion" name="institucion" required>
+      </label>
+
+      <label class="form__label" for="correo">
+        Correo
+        <input class="form__input" type="email" id="correo" name="correo" required>
+      </label>
+
+      <label class="form__label" for="mensaje">
+        Mensaje
+        <textarea class="form__textarea" id="mensaje" name="mensaje" required></textarea>
+      </label>
+
+      <button class="form__submit" type="submit">{{ startup.cta.boton_texto }}</button>
+    </form>
+  </div>
+</section>

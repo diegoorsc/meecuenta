@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install *)",
+      "PowerShell(Get-Command node -ErrorAction SilentlyContinue)",
+      "PowerShell(Get-Command npm -ErrorAction SilentlyContinue)",
+      "PowerShell(winget install --id OpenJS.NodeJS.LTS -e --accept-source-agreements --accept-package-agreements)",
+      "PowerShell(Get-Command npm.cmd -ErrorAction SilentlyContinue)",
+      "Bash(ls \"/c/Program Files/nodejs/\" 2>&1)"
+    ]
+  }
+}

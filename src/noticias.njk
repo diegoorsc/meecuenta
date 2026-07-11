@@ -1,0 +1,40 @@
+---
+layout: layouts/base.njk
+title: Noticias · Illapel a tus Patas
+description: Novedades del proyecto M-E-E y de Chivita, camino a la World Robot Olympiad 2026.
+---
+
+<section class="section container">
+  <p class="section__eyebrow">Bitácora</p>
+  <h1 class="section__title">Noticias</h1>
+  <p>Las últimas novedades del proyecto M-E-E y de la construcción de Chivita.</p>
+
+  <ul class="noticias-grid">
+    {% for noticia in collections.noticias %}
+      <li class="noticia-card">
+        <a class="noticia-card__link" href="{{ noticia.url }}">
+          <div class="noticia-card__media">
+            {% if noticia.data.portada %}
+              <img src="{{ noticia.data.portada }}" alt="{{ noticia.data.titulo }}" loading="lazy">
+            {% else %}
+              <div class="noticia-card__placeholder">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <rect x="3" y="4" width="18" height="16" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.6"/>
+                  <line x1="6.5" y1="8" x2="17.5" y2="8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+                  <line x1="6.5" y1="11.5" x2="17.5" y2="11.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+                  <line x1="6.5" y1="15" x2="13" y2="15" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+                </svg>
+                <span>{{ noticia.data.titulo }}</span>
+              </div>
+            {% endif %}
+          </div>
+          <div class="noticia-card__body">
+            <p class="noticia-card__fecha">{{ noticia.data.fecha | fechaLarga }}</p>
+            <h3 class="noticia-card__titulo">{{ noticia.data.titulo }}</h3>
+            <p class="noticia-card__resumen">{{ noticia.data.resumen }}</p>
+          </div>
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</section>
