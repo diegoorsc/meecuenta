@@ -1,8 +1,9 @@
 ---
-titulo: "Así construimos el cuerpo de Chivita"
+titulo: Así construimos el cuerpo de Chivita
 fecha: 2026-06-22
-portada: ""
-resumen: "Servos, ruedas con motorreductor y una Raspberry Pi 4: así es por dentro el cuerpo físico de nuestra cabra robot."
+portada: /img/noticias/img_2593.jpeg
+resumen: "Servos, ruedas con motorreductor y una Raspberry Pi 4: así es por
+  dentro el cuerpo físico de nuestra cabra robot."
 ---
 
 El cuerpo de Chivita combina **8 servomotores** que mueven sus patas y **4 ruedas con motorreductor** para el desplazamiento autónomo.
