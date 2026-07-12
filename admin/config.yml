@@ -1,8 +1,9 @@
 backend:
-  name: git-gateway
-  # Si la rama principal de tu repo en GitHub se llama distinto (por
-  # ejemplo "master"), cambiá este valor para que coincida.
+  name: github
+  repo: diegoorsc/meecuenta
   branch: main
+  base_url: https://decap-proxy.diego-salco.workers.dev
+  auth_endpoint: auth
 
 # Carpeta de imágenes por defecto (fallback) si algún campo de imagen no
 # define su propia carpeta. Con el backend git-gateway, todo lo que se

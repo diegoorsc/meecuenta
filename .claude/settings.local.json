@@ -6,7 +6,11 @@
       "PowerShell(Get-Command npm -ErrorAction SilentlyContinue)",
       "PowerShell(winget install --id OpenJS.NodeJS.LTS -e --accept-source-agreements --accept-package-agreements)",
       "PowerShell(Get-Command npm.cmd -ErrorAction SilentlyContinue)",
-      "Bash(ls \"/c/Program Files/nodejs/\" 2>&1)"
+      "Bash(ls \"/c/Program Files/nodejs/\" 2>&1)",
+      "Bash(mkdir -p \"/c/Users/diego/OneDrive/Documentos/decap-proxy/src\")",
+      "Bash(node --check src/index.js)",
+      "PowerShell(node --check \"C:\\\\Users\\\\diego\\\\OneDrive\\\\Documentos\\\\decap-proxy\\\\src\\\\index.js\")",
+      "PowerShell(if \\($?\\) { \"SYNTAX OK\" })"
     ]
   }
 }
