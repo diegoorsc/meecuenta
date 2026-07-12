@@ -2,7 +2,7 @@
 
 Sitio web de **MEE Cuenta** (MEE: Mecatrónica Escucha y Enseña), proyecto escolar de robótica de Santa Teresa de Illapel — World Robot Olympiad 2026, categoría Senior.
 
-Robot: **Chivita**, el primer robot de MEE Cuenta, nacido para representar y dar voz al patrimonio de la provincia del Choapa. Slogan: *"La cabra que te guía por Illapel"*.
+Robot: **Chivita**, el primer robot de MEE Cuenta, creado para representar y dar voz al patrimonio de la provincia del Choapa. Slogan: *"La cabra que te guía por Illapel"*.
 
 ---
 
