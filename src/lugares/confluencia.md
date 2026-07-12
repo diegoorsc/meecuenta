@@ -1,7 +1,8 @@
 ---
-nombre: "Confluencia"
-descripcion: "El punto donde se unen el río Illapel y el río Choapa, marcado por el histórico Puente Confluencia."
-foto: ""
+nombre: Confluencia
+descripcion: El punto donde se unen el río Illapel y el río Choapa, marcado por
+  el histórico Puente Confluencia.
+foto: /img/lugares/confluencia-illapel.jfif
 orden: 3
 destacado: true
 ---
