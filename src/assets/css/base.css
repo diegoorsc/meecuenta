@@ -66,7 +66,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 }
 
 .section--salvia {
-  background: var(--color-salvia);
+  background: var(--color-crema);
 }
 
 .section--marino {
@@ -78,11 +78,17 @@ ul { margin: 0; padding: 0; list-style: none; }
   color: var(--color-hueso);
 }
 
-/* El oliva oscuro del eyebrow no da suficiente contraste sobre marino:
-   sobre fondos oscuros se usa salvia (claro) en su lugar. */
+/* Sobre fondos oscuros el eyebrow y el foco pasan a dorado claro:
+   el oliva oscuro (usado sobre fondos claros) no da contraste suficiente
+   sobre marino, y el dorado base tampoco alcanza a leerse como texto. */
 .section--marino .section__eyebrow,
 .cta-demo .section__eyebrow {
-  color: var(--color-salvia);
+  color: var(--color-dorado-claro);
+}
+
+.section--marino,
+.cta-demo {
+  --color-focus: var(--color-dorado-claro);
 }
 
 .text-center {

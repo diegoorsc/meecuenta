@@ -1,7 +1,7 @@
 /* ===== Header / navegación (mobile-first, sin JS: checkbox hack) ===== */
 .site-header {
   background: var(--color-hueso);
-  border-bottom: 1px solid var(--color-salvia);
+  border-bottom: 2px solid var(--color-dorado);
   position: sticky;
   top: 0;
   z-index: 10;
@@ -58,7 +58,7 @@
   left: 0;
   right: 0;
   background: var(--color-hueso);
-  border-bottom: 1px solid var(--color-salvia);
+  border-bottom: 2px solid var(--color-dorado);
   padding: var(--space-4);
 }
 
@@ -75,8 +75,8 @@
 
 .site-nav__cta {
   display: inline-block;
-  background: var(--color-oliva);
-  color: var(--color-hueso) !important;
+  background: var(--color-dorado);
+  color: var(--color-marino) !important;
   padding: var(--space-2) var(--space-3);
   border-radius: var(--radius-pill);
   text-align: center;
@@ -107,8 +107,8 @@
   font-family: var(--font-display);
   font-weight: 700;
   font-size: 0.8rem;
-  background: var(--color-salvia);
-  color: var(--color-oliva);
+  background: var(--color-dorado);
+  color: var(--color-marino);
   padding: var(--space-2) var(--space-4);
   border-radius: var(--radius-pill);
   margin-bottom: var(--space-5);
@@ -190,8 +190,8 @@
   font-family: var(--font-display);
   font-weight: 800;
   font-size: 1.1rem;
-  color: var(--color-hueso);
-  background: var(--color-oliva);
+  color: var(--color-marino);
+  background: var(--color-dorado);
   border-radius: 50%;
 }
 
@@ -219,7 +219,7 @@
 
 .tech-card {
   background: var(--color-surface);
-  border-left: 6px solid var(--color-oliva);
+  border-left: 6px solid var(--color-dorado);
   border-radius: var(--radius-sm);
   padding: var(--space-3) var(--space-4);
 }
@@ -291,7 +291,7 @@
   display: flex;
   gap: var(--space-3);
   align-items: flex-start;
-  background: var(--color-lila);
+  background: var(--color-marino-2);
   color: var(--color-hueso);
   border-radius: var(--radius-lg);
   padding: var(--space-4);
@@ -302,6 +302,7 @@
   flex-shrink: 0;
   width: 40px;
   height: 40px;
+  color: var(--color-dorado-claro);
 }
 
 .sabias-que__titulo {
@@ -334,7 +335,7 @@
 .lugar-card__media {
   aspect-ratio: 4 / 3;
   width: 100%;
-  background: var(--color-salvia);
+  background: var(--color-crema);
 }
 
 .lugar-card__media img {
@@ -354,7 +355,7 @@
   text-align: center;
   padding: var(--space-3);
   color: var(--color-marino);
-  background: linear-gradient(135deg, var(--color-salvia), var(--color-lila) 150%);
+  background: linear-gradient(135deg, var(--color-crema), var(--color-dorado-claro) 150%);
 }
 
 .lugar-card__placeholder svg {
@@ -384,8 +385,8 @@
   font-size: 0.7rem;
   text-transform: uppercase;
   letter-spacing: 0.03em;
-  background: var(--color-oliva);
-  color: var(--color-hueso);
+  background: var(--color-dorado);
+  color: var(--color-marino);
   padding: 4px 10px;
   border-radius: var(--radius-pill);
 }
@@ -618,7 +619,7 @@
   align-items: flex-start;
   background: var(--color-marino);
   color: var(--color-hueso);
-  border: 2px solid var(--color-oliva);
+  border: 2px solid var(--color-dorado);
   border-radius: var(--radius-lg);
   padding: var(--space-4);
   margin-top: var(--space-5);
@@ -628,6 +629,7 @@
   flex-shrink: 0;
   width: 34px;
   height: 34px;
+  color: var(--color-dorado);
 }
 
 .vision-banner__etiqueta {
@@ -637,8 +639,8 @@
   font-size: 0.75rem;
   text-transform: uppercase;
   letter-spacing: 0.04em;
-  background: var(--color-oliva);
-  color: var(--color-hueso);
+  background: var(--color-dorado);
+  color: var(--color-marino);
   padding: 4px 10px;
   border-radius: var(--radius-pill);
   margin-bottom: var(--space-2);
@@ -655,7 +657,7 @@
 }
 
 .propuesta-valor {
-  background: var(--color-salvia);
+  background: var(--color-crema);
   border-radius: var(--radius-lg);
   padding: var(--space-5) var(--space-4);
   text-align: center;
@@ -678,7 +680,7 @@
 .cliente-card {
   background: var(--color-surface);
   border-radius: var(--radius-md);
-  border-top: 4px solid var(--color-lila);
+  border-top: 4px solid var(--color-dorado);
   padding: var(--space-4);
   box-shadow: var(--shadow-soft);
 }
@@ -744,7 +746,7 @@
   flex-direction: column;
   gap: var(--space-2);
   background: var(--color-surface);
-  border: 2px solid var(--color-salvia);
+  border: 2px solid var(--color-dorado-claro);
   border-radius: var(--radius-lg);
   padding: var(--space-4);
   box-shadow: var(--shadow-soft);
@@ -791,7 +793,7 @@
 .plan-card__precio {
   margin: 0;
   padding-top: var(--space-2);
-  border-top: 1px solid var(--color-salvia);
+  border-top: 1px solid var(--color-crema);
   font-family: var(--font-display);
   font-weight: 800;
   font-size: 1.1rem;
@@ -836,7 +838,7 @@
 .form__textarea {
   font-family: var(--font-body);
   font-size: 1rem;
-  color: var(--color-marino);
+  color: var(--color-text);
   padding: var(--space-2) var(--space-3);
   border: none;
   border-radius: var(--radius-sm);
@@ -852,8 +854,8 @@
   font-family: var(--font-display);
   font-weight: 800;
   font-size: 1rem;
-  background: var(--color-oliva);
-  color: var(--color-hueso);
+  background: var(--color-dorado);
+  color: var(--color-marino);
   border: none;
   padding: var(--space-3) var(--space-5);
   border-radius: var(--radius-pill);
