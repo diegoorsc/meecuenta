@@ -1,8 +1,9 @@
 ---
-titulo: "Avanzamos rumbo a la WRO 2026 en Combarbalá"
+titulo: Avanzamos rumbo a la WRO 2026 en Combarbalá
 fecha: 2026-07-08
-portada: ""
-resumen: "El equipo de MEE Cuenta sigue afinando a Chivita de cara a la instancia clasificatoria de la World Robot Olympiad 2026 en Combarbalá."
+portada: /img/noticias/img_2580.jpeg
+resumen: El equipo de MEE Cuenta sigue afinando a Chivita de cara a la instancia
+  clasificatoria de la World Robot Olympiad 2026 en Combarbalá.
 ---
 
 Estas últimas semanas el equipo estuvo enfocado en dejar a Chivita lista para la instancia clasificatoria de la **World Robot Olympiad 2026**, que se realizará en Combarbalá.
