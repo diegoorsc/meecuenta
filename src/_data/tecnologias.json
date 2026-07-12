@@ -1,12 +1,12 @@
 {
   "items": [
-    { "nombre": "Raspberry Pi 4", "rol": "Cerebro central de Chivita" },
-    { "nombre": "Micrófono ReSpeaker (DOA)", "rol": "Detecta la dirección desde donde le hablan" },
-    { "nombre": "Reconocimiento de voz offline en español (Vosk)", "rol": "Entiende al visitante sin necesitar internet" },
-    { "nombre": "Proyector", "rol": "Proyecta el mapa interactivo de Illapel" },
+    { "nombre": "Raspberry Pi 4", "rol": "El cerebro de Chivita — ahí piensa todo" },
+    { "nombre": "Micrófono ReSpeaker (DOA)", "rol": "Sus oídos: detecta de dónde le hablan" },
+    { "nombre": "Reconocimiento de voz offline en español (Vosk)", "rol": "Entiende al visitante sin depender de internet" },
+    { "nombre": "Proyector", "rol": "Tira el mapa interactivo de Illapel a la pared" },
     { "nombre": "Doble pantalla", "rol": "Muestra fotos y datos del lugar elegido" },
-    { "nombre": "ESP32 + PCA9685", "rol": "Controla el movimiento de los servomotores" },
-    { "nombre": "8 servomotores (patas)", "rol": "Dan movimiento a las patas de Chivita" },
-    { "nombre": "4 ruedas con motorreductor", "rol": "Permiten el desplazamiento autónomo" }
+    { "nombre": "ESP32 + PCA9685", "rol": "Mueve los servomotores con precisión" },
+    { "nombre": "8 servomotores (patas)", "rol": "Le dan movimiento a sus patas" },
+    { "nombre": "4 ruedas con motorreductor", "rol": "La ayudan a desplazarse sola, sin que nadie la empuje" }
   ]
 }

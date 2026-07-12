@@ -2,28 +2,28 @@
   "items": [
     {
       "numero": 1,
-      "titulo": "Se desplaza sola",
-      "texto": "Chivita se desplaza de forma autónoma con sus patas con servos y sus ruedas con motorreductor."
+      "titulo": "Me muevo sola, ¡y nadie me empuja!",
+      "texto": "Ando por ahí con mis patitas a servomotor y mis ruedas con motorreductor. Nadie me tiene que arrastrar: yo me las arreglo solita."
     },
     {
       "numero": 2,
-      "titulo": "Escucha de dónde le hablan",
-      "texto": "Su micrófono direccional ReSpeaker detecta desde qué dirección le habla el visitante."
+      "titulo": "Te escucho llegar",
+      "texto": "Tengo un micrófono direccional ReSpeaker que capta al toque desde qué dirección me estás hablando. No necesito verte: te escucho."
     },
     {
       "numero": 3,
-      "titulo": "Se da vuelta hacia ti",
-      "texto": "Chivita gira su cuerpo completo para quedar de frente, con la pantalla perpendicular a tu mirada."
+      "titulo": "Me doy vuelta entera para mirarte",
+      "texto": "Giro todo el cuerpo —no solo la cabeza, ¡el cuerpo entero!— hasta quedar justo de frente, con la pantalla mirándote derechito."
     },
     {
       "numero": 4,
-      "titulo": "Proyecta el mapa",
-      "texto": "Proyecta un mapa interactivo de Illapel y muestra el lugar elegido."
+      "titulo": "¡Aquí está el mapa!",
+      "texto": "Proyecto un mapa interactivo de Illapel y te muestro exactamente el lugar que elegiste. Nada de andar adivinando."
     },
     {
       "numero": 5,
-      "titulo": "Cuenta la historia",
-      "texto": "Narra la historia del lugar, con fotos y datos."
+      "titulo": "Y ahora, la historia",
+      "texto": "Te cuento la historia del lugar con fotos y datos, como quien cuenta un buen cuento. Ese es mi momento favorito."
     }
   ]
 }

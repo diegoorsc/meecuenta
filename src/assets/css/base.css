@@ -19,7 +19,7 @@ body {
 
 h1, h2, h3 {
   font-family: var(--font-display);
-  font-weight: 800;
+  font-weight: 700;
   line-height: 1.15;
   margin: 0 0 var(--space-3);
   color: var(--color-marino);
@@ -53,10 +53,10 @@ ul { margin: 0; padding: 0; list-style: none; }
 
 .section__eyebrow {
   font-family: var(--font-display);
-  font-weight: 700;
+  font-weight: 600;
   font-size: 0.85rem;
   letter-spacing: 0.02em;
-  color: var(--color-oliva-dark);
+  color: var(--color-acento-dark);
   text-transform: uppercase;
   margin-bottom: var(--space-2);
 }
@@ -66,7 +66,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 }
 
 .section--salvia {
-  background: var(--color-salvia);
+  background: var(--color-crema);
 }
 
 .section--marino {
@@ -78,11 +78,17 @@ ul { margin: 0; padding: 0; list-style: none; }
   color: var(--color-hueso);
 }
 
-/* El oliva oscuro del eyebrow no da suficiente contraste sobre marino:
-   sobre fondos oscuros se usa salvia (claro) en su lugar. */
+/* El acento oscuro del eyebrow no da suficiente contraste sobre marino, y
+   el acento base tampoco alcanza a leerse como texto: sobre fondos
+   oscuros se usa el acento claro. */
 .section--marino .section__eyebrow,
 .cta-demo .section__eyebrow {
-  color: var(--color-salvia);
+  color: var(--color-acento-claro);
+}
+
+.section--marino,
+.cta-demo {
+  --color-focus: var(--color-acento-claro);
 }
 
 .text-center {

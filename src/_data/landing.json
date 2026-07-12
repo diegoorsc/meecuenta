@@ -1,23 +1,23 @@
 {
   "hero": {
     "pildora": "Tecnología que conecta cultura, historia y comunidad",
-    "presentacion": "¡Hola, soy Chivita! Soy el primer robot de MEE Cuenta, creada para representar y dar voz al patrimonio de la provincia del Choapa. Recorro el espacio de forma autónoma y te muestro el patrimonio de Illapel: solo tienes que hablarme."
+    "presentacion": "¡Hola, soy Chivita! Soy la primera robot de MEE Cuenta, y ando dando vueltas por acá representando a toda la provincia del Choapa con harto orgullo. Me muevo solita, escucho para dónde me hablan, y te muestro el patrimonio de Illapel al tiro. ¡Anda, pregúntame no más!"
   },
   "que_es": {
     "titulo": "¿Qué es Chivita?",
     "parrafos": [
-      "Chivita es el primer robot de MEE Cuenta (MEE: Mecatrónica Escucha y Enseña), creado por estudiantes de Santa Teresa de Illapel para la World Robot Olympiad 2026, categoría Senior.",
-      "Su misión es acercar el patrimonio de Illapel a quien se le acerque: proyecta un mapa interactivo de la ciudad y narra la historia, las fotos y los datos de cada lugar patrimonial.",
-      "Con este proyecto buscamos demostrar que la robótica y la inteligencia artificial pueden ponerse al servicio de la comunidad, aportando a la meta 4.7 de los Objetivos de Desarrollo Sostenible (ODS 4): educación para el desarrollo sostenible y la valoración de la diversidad cultural."
+      "Chivita es el primer robot de MEE Cuenta (MEE: Mecatrónica Escucha y Enseña) — una cabra con personalidad propia, creada por estudiantes de Santa Teresa de Illapel para la World Robot Olympiad 2026, categoría Senior.",
+      "Su misión es sencilla y ambiciosa a la vez: acercar el patrimonio de Illapel a quien se le cruce. Proyecta un mapa interactivo de la ciudad y cuenta la historia, las fotos y los datos de cada lugar patrimonial, como buena guía turística con patas.",
+      "Con este proyecto queremos demostrar que la robótica y la inteligencia artificial pueden ponerse al servicio de la comunidad, aportando a la meta 4.7 de los Objetivos de Desarrollo Sostenible (ODS 4): educación para el desarrollo sostenible y la valoración de la diversidad cultural."
     ]
   },
   "por_que_importa": {
     "titulo": "¿Por qué importa?",
     "items": [
-      { "titulo": "Promueve el turismo", "texto": "Invita a residentes y visitantes a recorrer Illapel con una mirada nueva." },
-      { "titulo": "Difunde el patrimonio", "texto": "Pone en valor lugares, historias y personajes que no siempre están en una guía turística." },
-      { "titulo": "Enseña con tecnología", "texto": "Muestra que la robótica y la IA pueden usarse para contar historias, no solo para resolver problemas técnicos." },
-      { "titulo": "Fortalece la identidad", "texto": "Ayuda a que niños, niñas y jóvenes de Illapel se sientan orgullosos de su historia local." }
+      { "titulo": "Promueve el turismo", "texto": "Invita a mirar Illapel con otros ojos — los de una cabra bien curiosa." },
+      { "titulo": "Difunde el patrimonio", "texto": "Saca a la luz lugares, historias y personajes que no siempre aparecen en una guía turística." },
+      { "titulo": "Enseña con tecnología", "texto": "Demuestra que la robótica y la IA también pueden contar historias, no solo resolver problemas técnicos." },
+      { "titulo": "Fortalece la identidad", "texto": "Ayuda a que niños, niñas y jóvenes de Illapel se sientan orgullosos de su historia, con una sonrisa de por medio." }
     ]
   }
 }

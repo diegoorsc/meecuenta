@@ -1,23 +1,28 @@
 :root {
-  /* Paleta oficial del tríptico */
+  /* Paleta con más carácter: marino ancla la seriedad, hueso/crema son el
+     fondo, y un naranja vivo reemplaza al oliva como acento principal. */
   --color-marino: #1E2A5A;
-  --color-oliva: #5C6B3C;
-  --color-salvia: #DCE2CC;
+  --color-marino-2: #2A3B6B;
+  --color-acento: #E8863A;
+  --color-acento-claro: #F0A868;
   --color-hueso: #F1EFE7;
-  --color-lila: #8E8AA6;
+  --color-crema: #FAF6EC;
 
   --color-bg: var(--color-hueso);
-  --color-text: var(--color-marino);
+  --color-text: #3A3428;
   --color-surface: #FFFFFF;
 
-  /* Variante más oscura de oliva: usada como texto sobre fondos claros
-     (salvia/hueso) donde el oliva base no llega al contraste mínimo AA. */
-  --color-oliva-dark: #4A5730;
-  --color-focus: var(--color-oliva-dark);
+  /* Variante oscura del acento: el naranja base no da contraste
+     suficiente como texto (ni sobre claro ni sobre oscuro), así que en
+     texto/iconos chicos sobre fondo claro se usa esta versión más oscura,
+     de la misma familia cálida. */
+  --color-acento-dark: #9A4F19;
+  --color-focus: var(--color-acento-dark);
 
-  /* Tipografía */
-  --font-display: "Nunito", sans-serif;
-  --font-body: "Nunito Sans", sans-serif;
+  /* Tipografía: Fredoka para títulos (redondeada, con carácter),
+     Inter para cuerpo de texto (limpia y muy legible). */
+  --font-display: "Fredoka", sans-serif;
+  --font-body: "Inter", sans-serif;
 
   /* Radios (look redondeado/cercano) */
   --radius-sm: 10px;

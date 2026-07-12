@@ -6,9 +6,26 @@ description: Chivita, el robot guía del proyecto MEE Cuenta, te muestra el patr
 
 <!-- ===== 1. HERO ===== -->
 <section class="hero container">
+  <!-- Decoración: cerros del Choapa + estrellitas, puramente visual -->
+  <div class="hero__deco" aria-hidden="true">
+    <svg class="hero__deco-star hero__deco-star--1" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+      <path d="M20 4 L24 16 L36 20 L24 24 L20 36 L16 24 L4 20 L16 16 Z" fill="currentColor"/>
+    </svg>
+    <svg class="hero__deco-star hero__deco-star--2" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+      <path d="M20 4 L24 16 L36 20 L24 24 L20 36 L16 24 L4 20 L16 16 Z" fill="currentColor"/>
+    </svg>
+    <svg class="hero__deco-mountain" viewBox="0 0 400 70" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 70 L55 22 L100 48 L150 8 L210 45 L270 18 L330 46 L400 26 L400 70 Z" fill="var(--color-crema)"/>
+    </svg>
+  </div>
+
   <span class="hero__pill">{{ landing.hero.pildora }}</span>
 
-  <img src="/assets/img/logo-chivita.svg" alt="Chivita, robot de MEE Cuenta" class="hero-logo">
+  <div class="hero__visual">
+    <!-- TODO(Diego): reemplazar por la ilustración custom de Chivita cuando esté lista.
+         Basta con cambiar el contenido de src/assets/img/logo-chivita.svg. -->
+    <img src="/assets/img/logo-chivita.svg" alt="Chivita, robot de MEE Cuenta" class="hero-logo">
+  </div>
 
   <h1 class="hero__title">{{ site.nombre_experiencia }}</h1>
   <p class="hero__slogan">{{ site.slogan }}</p>
