@@ -102,7 +102,7 @@ Estos dos valores ya están configurados en [`netlify.toml`](netlify.toml), así
 
 ---
 
-## Equipo — IronCow ("Los Chivos de Hierro")
+## Equipo — IronGoat ("Los Chivos de Hierro")
 
 - **Diego Salas** — Líder técnico
 - **Francisca Suazo** — Reporte y arte
