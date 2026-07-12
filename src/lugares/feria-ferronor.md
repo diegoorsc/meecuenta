@@ -1,7 +1,7 @@
 ---
-nombre: "Feria Ferronor"
-descripcion: "Feria que mantiene vivo el patrimonio comercial y social de Illapel."
-foto: ""
+nombre: Feria Ferronor
+descripcion: Feria que mantiene vivo el patrimonio comercial y social de Illapel.
+foto: /img/lugares/ferronor.webp
 orden: 14
 destacado: false
 ---
