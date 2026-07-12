@@ -114,7 +114,7 @@
   margin-bottom: var(--space-5);
 }
 
-.hero__goat {
+.hero-logo {
   width: 190px;
   height: auto;
   margin: 0 auto var(--space-4);
@@ -611,7 +611,7 @@
   color: var(--color-marino);
 }
 
-/* ===== M-E-E como start-up ===== */
+/* ===== MEE Cuenta como start-up ===== */
 .vision-banner {
   display: flex;
   gap: var(--space-3);

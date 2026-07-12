@@ -173,9 +173,9 @@ collections:
               - { label: "Nombre del componente", name: "nombre", widget: "string" }
               - { label: "Rol / para qué sirve", name: "rol", widget: "string" }
 
-      # --- M-E-E como start-up (lado visionario) ---
+      # --- MEE Cuenta como start-up (lado visionario) ---
       - name: "startup"
-        label: "M-E-E como start-up"
+        label: "MEE Cuenta como start-up"
         file: "src/_data/startup.json"
         fields:
           - label: "Etiqueta / texto del banner de visión"

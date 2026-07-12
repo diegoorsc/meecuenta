@@ -1,7 +1,7 @@
 {
   "layout": "layouts/noticia.njk",
   "eleventyComputed": {
-    "title": "{{ titulo }} · Noticias · Illapel a tus Patas",
+    "title": "{{ titulo }} · Noticias · MEE Cuenta",
     "description": "{{ resumen }}"
   }
 }

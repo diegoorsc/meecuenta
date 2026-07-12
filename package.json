@@ -2,7 +2,7 @@
   "name": "illapel-a-tus-patas",
   "version": "0.1.0",
   "private": true,
-  "description": "Sitio web del proyecto M-E-E — Illapel a tus Patas (Chivita)",
+  "description": "Sitio web de MEE Cuenta — Chivita, robot guía del patrimonio de Illapel",
   "scripts": {
     "start": "eleventy --serve",
     "build": "eleventy"

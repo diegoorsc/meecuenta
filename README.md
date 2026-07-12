@@ -1,8 +1,8 @@
-# Illapel a tus Patas · M-E-E
+# MEE Cuenta · Chivita
 
-Sitio web del proyecto escolar de robótica **M-E-E** (Máquina para Escuchar y Enseñar), del Colegio Santa Teresa de Jesús de Illapel — World Robot Olympiad 2026, categoría Senior.
+Sitio web de **MEE Cuenta** (MEE: Mecatrónica Escucha y Enseña), proyecto escolar de robótica de Santa Teresa de Illapel — World Robot Olympiad 2026, categoría Senior.
 
-Robot: **Chivita**. Experiencia/web: **"Illapel a tus Patas"**. Slogan: *"La cabra que te guía por Illapel"*.
+Robot: **Chivita**, el primer robot de MEE Cuenta, nacido para representar y dar voz al patrimonio de la provincia del Choapa. Slogan: *"La cabra que te guía por Illapel"*.
 
 ---
 
@@ -39,14 +39,14 @@ Robot: **Chivita**. Experiencia/web: **"Illapel a tus Patas"**. Slogan: *"La cab
 │   ├── index.njk                 # Landing (/)
 │   ├── lugares.njk                # Galería "Descubre Illapel" (/lugares/)
 │   ├── noticias.njk                # Listado de noticias (/noticias/)
-│   ├── startup.njk                  # M-E-E como start-up (/startup/)
+│   ├── startup.njk                  # MEE Cuenta como start-up (/startup/)
 │   ├── gracias.njk                   # Página de agradecimiento del formulario (/gracias/)
 │   │
 │   ├── favicon.svg / favicon.png / apple-touch-icon.png
 │   │
 │   ├── assets/
 │   │   ├── css/                # tokens.css (paleta/tipografía), base.css, componentes.css
-│   │   └── img/                 # og-image.png (imagen para compartir en redes)
+│   │   └── img/                 # logo-chivita.svg (logo del hero), og-image.png (imagen para compartir)
 │   │
 │   └── img/                      # Fotos subidas desde Decap CMS (lugares/, noticias/)
 │
@@ -102,11 +102,11 @@ Estos dos valores ya están configurados en [`netlify.toml`](netlify.toml), así
 
 ---
 
-## Equipo
+## Equipo — IronCow ("Los Chivos de Hierro")
 
-- **Diego** — líder técnico
-- **Maxi** — audio y narración
-- **Francisca Suazo** — reporte y arte
-- **Profe Sergio** — profesor guía
+- **Diego Salas** — Líder técnico
+- **Francisca Suazo** — Reporte y arte
+- **Maximiliano Cáceres** — Audio y narración
+- **Profesor Sergio Oyarzún** — Profesor guía
 
-Colegio Santa Teresa de Jesús, Illapel, Región de Coquimbo, Chile.
+Santa Teresa de Illapel, Región de Coquimbo, Chile.

@@ -1,10 +1,10 @@
 {
-  "banner": "Así imaginamos a M-E-E si se convirtiera en una empresa real. Hoy es un proyecto escolar de robótica; esto es una proyección, no un producto a la venta.",
-  "intro": "Hoy, M-E-E es un proyecto escolar de robótica hecho por estudiantes del Colegio Santa Teresa de Jesús de Illapel, camino a la World Robot Olympiad 2026. Esta página imagina hacia dónde podría crecer si se convirtiera en un producto real para otras comunas, colegios y oficinas de turismo.",
+  "banner": "Así imaginamos a MEE Cuenta si se convirtiera en una empresa real. Hoy es un proyecto escolar de robótica; esto es una proyección, no un producto a la venta.",
+  "intro": "Hoy, MEE Cuenta es un proyecto escolar de robótica hecho por estudiantes de Santa Teresa de Illapel, camino a la World Robot Olympiad 2026. Esta página imagina hacia dónde podría crecer si se convirtiera en un producto real para otras comunas, colegios y oficinas de turismo.",
   "propuesta_valor": {
     "titulo": "Un guía patrimonial robótico, replicable en cualquier comuna",
     "slogan": "Lleva tu patrimonio a la gente.",
-    "texto": "M-E-E podría convertirse en una plataforma robótica que cualquier municipio, colegio u oficina de turismo cargue con la historia, los lugares y las voces de su propio territorio."
+    "texto": "MEE Cuenta podría convertirse en una plataforma robótica que cualquier municipio, colegio u oficina de turismo cargue con la historia, los lugares y las voces de su propio territorio."
   },
   "clientes": [
     { "titulo": "Municipios", "texto": "Para plazas, museos al aire libre y oficinas de turismo municipal." },
@@ -55,7 +55,7 @@
   ],
   "cta": {
     "titulo": "¿Te imaginas esto en tu comuna, colegio o ruta turística?",
-    "texto": "Conversemos sobre cómo podría verse M-E-E en tu territorio.",
+    "texto": "Conversemos sobre cómo podría verse MEE Cuenta en tu territorio.",
     "boton_texto": "Solicita una demo"
   }
 }
